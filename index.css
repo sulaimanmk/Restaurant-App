@@ -1,0 +1,229 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Smythe", sans-serif;
+}
+
+main, header {
+  width: 600px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  font-family: "Roboto";
+  font-weight: bold;
+  background-color: #16DB99;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+header {
+  padding-bottom: 25px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header .slogan {
+  color: #fff;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  z-index: 1;
+  font-size: 39px;
+}
+header .slogan h3 {
+  margin: 0;
+  font-size: 39px;
+}
+header .slogan p {
+  margin: 0;
+  font-size: 20px;
+}
+
+main .item-feed .food-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d2d2d2;
+  margin: 5px 10px;
+}
+main .item-feed .food-item .left {
+  display: flex;
+  gap: 2rem;
+}
+main .item-feed .food-item .left .image {
+  display: flex;
+  align-items: center;
+}
+main .item-feed .food-item .left .image h1 {
+  margin: 0;
+  height: 80%;
+}
+main .item-feed .food-item .left .text h2, main .item-feed .food-item .left .text h3, main .item-feed .food-item .left .text p {
+  margin: 0;
+  padding-bottom: 15px;
+}
+main .item-feed .food-item .left .text h2 {
+  font-size: 28px;
+}
+main .item-feed .food-item .left .text p {
+  font-size: 16px;
+  color: #8B8B8B;
+}
+main .item-feed .food-item .left .text h3 {
+  font-size: 20px;
+}
+main .item-feed .food-item .right {
+  display: flex;
+  align-items: center;
+}
+main .item-feed .food-item .right img:hover {
+  transform: scale(1.2);
+}
+main .checkout-area .summary-title {
+  padding-top: 30px;
+  text-align: center;
+}
+main .checkout-area .summary-feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 2px solid black;
+  margin: 5px 10px;
+}
+main .checkout-area .summary-feed .summary-feed-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+main .checkout-area .summary-feed .summary-feed-item .left-col {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .checkout-area .summary-feed .summary-feed-item .left-col h2 {
+  margin: 0;
+}
+main .checkout-area .summary-feed .summary-feed-item .left-col p {
+  margin: 0;
+  color: #8B8B8B;
+}
+main .checkout-area .summary-feed .summary-feed-item .right-col {
+  display: flex;
+  align-items: center;
+}
+main .checkout-area .last-col {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px;
+}
+main .checkout-area .order-btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+main .checkout-area .order-btn a {
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+}
+main .checkout-area .thank-you-msg {
+  color: #065F46;
+  background-color: #ECFDF5;
+  padding: 25px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 420px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 2px #666;
+  background-color: #fff;
+  color: #212529;
+}
+.modal .close-modal-btn-container {
+  text-align: right;
+  margin: 9px;
+}
+.modal .close-modal-btn-container .modal-close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: black;
+}
+.modal .close-modal-btn-container .modal-close-btn:hover,
+.modal .close-modal-btn-container .modal-close-btn:active {
+  color: red;
+  cursor: pointer;
+}
+.modal .modal-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center;
+}
+.modal .modal-inner h2 {
+  font-family: "Roboto";
+  font-size: 24px;
+}
+.modal .modal-inner .modal-text {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.modal .modal-inner .modal-text input {
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 90%;
+  border: 1px solid #757575;
+  border-radius: 3px;
+}
+.modal .modal-inner .modal-text .pay-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.modal .modal-inner .modal-text .pay-btn button {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  width: 80%;
+  color: #fff;
+  border: 1px solid #16DB99;
+  border-radius: 3px;
+  background-color: #16DB99;
+  cursor: pointer;
+}
+.modal .modal-inner p {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+}
+.modal .modal-inner .modal-inner-loading {
+  text-align: center;
+}
+.modal .modal-inner .modal-inner-loading .loading {
+  width: 100%;
+  margin-top: 10px;
+}/*# sourceMappingURL=index.css.map */

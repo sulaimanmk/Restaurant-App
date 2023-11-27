@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Smythe&display=swap" rel="stylesheet">
+
+
+    <title>Pizza Pot</title>
+</head>
+<body>
+    <header>
+        <img src="Images/ferks-guare-KEZdWfYD-ow-unsplash 1.png" alt="logo">
+        <div class="slogan">
+            <h3>Jazz's Diner</h3>
+            <p>The best burgers and pizza in town.</p>
+        </div>
+        
+    </header>
+    <main>
+        <div id="item-feed" class="item-feed">
+            <!-- items here -->
+            <!-- <div class="food-item">
+                <div class="left">
+                    <div class="image">
+                        <h1>🍕</h1>
+                    </div>
+                    <div class="text">
+                        <h2>Pizza</h2>
+                        <p>pepperoni,mushroom,mozarella</p>
+                        <h3>$14</h3>
+                    </div>
+                    
+
+                </div>
+                <div class="right">
+                    <img src="Images/icons8-grey.png" alt="addOrder">
+                </div>
+            </div> -->
+        </div>
+        <div class="checkout-area">
+            <div class="summary-title">
+                <h2>Your Order</h2>
+            </div>
+            <div class="summary-feed">
+                <!-- Display Orders Here-->
+                <!-- <div class="summary-feed-item">
+                    <div class="left-col">
+                        <h2>Pizza</h2>
+                        <p>remove</p>
+                    </div>
+                    <div class="right-col">
+                        <p>$14</p>
+                    </div>
+                </div> -->
+                
+            </div>
+            <div class="total">
+                <!-- Display total Here -->
+                
+            </div>
+        </div>
+        
+        
+        <div class="modal">
+            <div class="close-modal-btn-container">
+                <button class="modal-close-btn">X</button>
+            </div>
+            <div class="modal-inner">
+                <h2>Enter Card Details</h2>
+                <div class="modal-text">
+                    <form>
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="number" placeholder="Enter card number" required>
+                        <input type="number" placeholder="Enter CVV" required>
+                        <div class="pay-btn">
+                            <button id="payment-btn" type="submit">Pay</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
